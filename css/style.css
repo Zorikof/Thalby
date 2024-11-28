@@ -1,6 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700");
 .container {
+  position: relative;
   margin: auto;
   max-width: 1200px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .burger-menu .burger-menu_nav .burger-menu_link {
+  padding-right: 28px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 165%;
+  color: #1c1b1b;
+}
+header .container a img {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+header .container ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+header .container ul li::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header .container ul li.inst::before {
+  background-image: url("../images/inst.svg");
+}
+header .container ul li.search::before {
+  background-image: url("../images/loupe.svg");
+}
+header .container ul li.lock::before {
+  background-image: url("../images/lock.svg");
+  width: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
