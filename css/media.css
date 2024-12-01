@@ -399,6 +399,20 @@
     }
 }
 
+@media only screen and (max-width: 393px) {
+    body {
+        .section_one {
+            .container {
+                .right_side {
+                    img {
+                        max-width: 393px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 390px) {
     body {
         .section_one {
